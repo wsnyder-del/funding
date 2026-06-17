@@ -5,36 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlas Energy Capital - Get Short-Term Capital</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
-        
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0a1f3d 0%, #1e3a5f 100%);
-            color: white;
+            height: 100%;
             overflow: hidden;
+            font-family: Arial, sans-serif;
         }
-        
-        .container {
+        .ad-container {
+            position: relative;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
         }
-        
-        .content {
-            padding: 40px 60px;
-            max-width: 50%;
-            z-index: 2;
+        .ad-image {
+            width: 100%;
+            height: auto;
+            display: block;
         }
+        .click-button {
+            position: absolute;
+            bottom: 18%;
+            left: 8%;
+            background: linear-gradient(90deg, #f4b400, #ffd700);
+            color: #0a1f3d;
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(244, 180, 0, 0.5);
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        .click-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(244, 180, 0, 0.6);
+        }
+        .qr-overlay {
+            position: absolute;
+            bottom: 22%;
+            right: 8%;
+            text-align: center;
+            z-index: 10;
+        }
+        .qr-box {
+            background: rgba(255,255,255,0.95);
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <!-- Your original image -->
+        <img src="https://grok.x.ai/attachments/cpWSb" alt="Atlas Energy Capital Ad" class="ad-image">
         
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        <!-- Clickable Button -->
+        <a href="https://www.atlasenergycapital.com/" target="_blank" class="click-button">
+            CLICK HERE TO APPLY NOW
+        </a>
+        
+        <!-- QR Code -->
+        <div class="qr-overlay">
+            <div class="qr-box">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://www.atlasenergycapital.com/" alt="Scan to Apply" width="220">
+                <p style="margin:8px 0 0 0; font-size:14px; color:#333;">Or scan to apply instantly</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>            gap: 12px;
             margin-bottom: 20px;
         }
         
