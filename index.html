@@ -3,60 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas Energy Capital - Short-Term Capital</title>
+    <title>Atlas Energy Capital</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: system-ui, -apple-system, sans-serif;
             background: #0a1f3d;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
         }
         .ad-wrapper {
             position: relative;
             max-width: 100%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
         }
         .ad-image {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 4px;
         }
         .apply-btn {
             position: absolute;
-            bottom: 13%;
+            bottom: 12%;
             left: 6%;
-            background: linear-gradient(to right, #f4b400, #ffdd57);
+            background: linear-gradient(to right, #f4b400, #ffd700);
             color: #0a1f3d;
-            padding: 18px 42px;
-            font-size: clamp(19px, 2.8vw, 26px);
+            padding: 18px 45px;
+            font-size: clamp(18px, 2.6vw, 25px);
             font-weight: 700;
             text-decoration: none;
             border-radius: 8px;
             box-shadow: 0 10px 30px rgba(244, 180, 0, 0.6);
             z-index: 10;
-            white-space: nowrap;
         }
         .apply-btn:hover {
-            transform: translateY(-3px);
+            transform: scale(1.03);
             box-shadow: 0 15px 35px rgba(244, 180, 0, 0.7);
-        }
-        .qr-container {
-            position: absolute;
-            bottom: 15%;
-            right: 6%;
-            text-align: center;
-            z-index: 10;
-        }
-        .qr-box {
-            background: rgba(255,255,255,0.95);
-            padding: 15px;
-            border-radius: 16px;
-            box-shadow: 0 0 35px rgba(0, 243, 255, 0.6);
         }
     </style>
 </head>
@@ -64,15 +48,10 @@
     <div class="ad-wrapper">
         <img src="ad.jpg" alt="Atlas Energy Capital Ad" class="ad-image">
         
+        <!-- Only the button is active -->
         <a href="https://www.atlasenergycapital.com/" target="_blank" class="apply-btn">
             CLICK HERE TO APPLY NOW
         </a>
-        
-        <div class="qr-container">
-            <div class="qr-box">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://www.atlasenergycapital.com/&color=1a2b4c" width="240" alt="Scan to Apply">
-            </div>
-        </div>
     </div>
 </body>
 </html>
